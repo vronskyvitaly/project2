@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Source Code Variable';
+    font-weight: 200 900;
+    font-style: normal;
+    font-stretch: normal;
+    src: url('./WOFF2/VAR/SourceCodeVariable-Roman.ttf.woff2') format('woff2'),
+        url('./WOFF/VAR/SourceCodeVariable-Roman.ttf.woff') format('woff'),
+        url('./VAR/SourceCodeVariable-Roman.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Variable';
+    font-weight: 200 900;
+    font-style: italic;
+    font-stretch: normal;
+    src: url('./WOFF2/VAR/SourceCodeVariable-Italic.ttf.woff2') format('woff2'),
+        url('./WOFF/VAR/SourceCodeVariable-Italic.ttf.woff') format('woff'),
+        url('./VAR/SourceCodeVariable-Italic.ttf') format('truetype');
+}
+
+
+
+body h1 {
+    font-family: 'Source Code Variable';
+    color: rgb(254, 254, 254);
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+body h2 {
+    color: rgb(185, 185, 176);
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+body p {
+    color: aliceblue;
+}
+
+.header {
+
+    height: 100vh;
+    display: flex;
+    padding-top: 300px;
+    text-align: center;
+    background-color: black;
+}
+
+
+.selector {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.selector h2 {
+    padding-bottom: 20px;
+}
+
+#tex p {
+    color: black;
+}
+
+#img img{
+    /* выровнял изображение по центру блока */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+}
+
+#titleS2 h2{
+    text-align: end;
+}
