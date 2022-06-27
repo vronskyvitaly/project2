@@ -1,0 +1,190 @@
+EMMET
+https://docs.emmet.io/abbreviations/syntax/
+
+
+
+# Child: >
+
+⬛️ комбинация
+            div>ul>li
+
+
+⬛️ результат
+            <div>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+
+
+
+# Sibling: +
+
+⬛️ комбинация
+            div+p+bq
+
+
+⬛️ результат
+            <div></div>
+            <p></p>
+            <blockquote></blockquote>
+
+
+
+# Climb-up: ^
+
+⬛️ комбинация
+            div+div>p>span+em 
+
+
+⬛️ результат
+            <div></div>
+            <div>
+              <p><span></span><em></em></p>
+            </div>
+
+
+
+⬛️ комбинация
+            div+div>p>span+em^bq
+
+
+⬛️ результат
+            <div></div>
+            <div>
+              <p><span></span><em></em></p>
+              <blockquote></blockquote>
+            </div>           
+
+
+
+⬛️ комбинация
+            div+div>p>span+em^^^bq
+
+
+⬛️ результат
+            <div></div>
+            <div>
+               <p><span></span><em></em></p>
+            </div>
+            <blockquote></blockquote>           
+
+
+
+# Multiplication: *
+
+⬛️ комбинация
+            ul>li*5
+
+
+⬛️ результат
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+
+
+# Grouping: ()
+
+⬛️ комбинация
+            div>(header>ul>li*2>a)+footer>p
+
+
+⬛️ результат
+            <div>
+               <header>
+                    <ul>
+                        <li><a href=""></a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+               </header>
+               <footer>
+                 <p></p>
+               </footer>
+            </div>          
+
+
+
+⬛️ комбинация
+            (div>dl>(dt+dd)*3)+footer>p
+
+
+⬛️ результат
+            <div>
+              <dl>
+                <dt></dt>
+                <dd></dd>
+                <dt></dt>
+                <dd></dd>
+                <dt></dt>
+                <dd></dd>
+              </dl>
+            </div>
+            <footer>
+              <p></p>
+            </footer>
+
+
+
+# Item numbering: $
+
+⬛️ комбинация
+            ul>li.item$*5
+
+
+⬛️ результат
+            <ul>
+                <li class="item1"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+                <li class="item4"></li>
+                <li class="item5"></li>
+            </ul>
+
+
+
+⬛️ комбинация
+            ul>li.item$$$*5
+
+
+⬛️ результат
+            <ul>
+            <li class="item001"></li>
+            <li class="item002"></li>
+            <li class="item003"></li>
+            <li class="item004"></li>
+            <li class="item005"></li>
+            </ul>
+
+
+# Text: {}            
+
+⬛️ комбинация
+            a{Click me}
+
+
+⬛️ результат
+            <a href="">Click me</a>
+
+
+
+⬛️ комбинация
+            p>{Click }+a{here}+{ to continue}
+
+
+⬛️ результат
+            <p>Click <a href="">here</a> to continue</p>
+
+
+
+⬛️ комбинация
+            p{Click }+a{here}+{ to continue}
+
+
+⬛️ результат
+            <p>Click </p>
+            <a href="">here</a> to continue            
