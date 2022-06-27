@@ -28,6 +28,10 @@ body h1 {
     text-transform: uppercase;
 }
 
+body h1{
+    
+}
+
 body h2 {
     color: rgb(185, 185, 176);
     font-size: 40px;
