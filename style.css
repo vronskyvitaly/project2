@@ -75,9 +75,12 @@ body h2 {
     font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
+    padding-bottom: 20px;
 }
 
-
+#iconsHeader{
+    color: azure;
+}
 
 /* Сделал адаптив на маленьких экранах, информация содержится у меня в напоминаниях в полезных документах */
 @media screen and (min-width: 300px) and (max-width: 500px) {
@@ -95,7 +98,7 @@ body h2 {
 
 
 body p {
-    color: aliceblue;
+    color: rgb(0, 3, 5);
 }
 
 .header {
@@ -109,17 +112,18 @@ body p {
 
 
 .selector {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .selector h2 {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
 
 }
 
 #tex p {
+    text-align: center;
     font-family: 'AnyConv.com__Comic_CAT';
     color: black;
 }
@@ -133,6 +137,20 @@ body p {
     height: 300px;
 }
 
-#titleS2 h2 {
+#texS2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#icons{
+    color: black;
     text-align: center;
 }
+
+#texS2 h3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
