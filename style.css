@@ -1,157 +1,142 @@
-
-
-
 /* По этому макету подключаю шрифт на сайт,который
  предварительно скачиваю
 и конвектирую в woff и woff2 через конвектор который находится в 
 напоминаниях
 в папке полезные документы */
 @font-face {
-	font-family: 'AnyConv.com__Comic_CAT';
-	src: url("fonts/AnyConv.com__Comic_CAT.woff2"),
-	url("fonts/AnyConv.com__Comic_CAT.woff");
-	font-weight: 300;
-	font-display: swap;
-	font-style: normal;
+  font-family: "AnyConv.com__Comic_CAT";
+  src: url("fonts/AnyConv.com__Comic_CAT.woff2"),
+    url("fonts/AnyConv.com__Comic_CAT.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
 }
-
 
 @font-face {
-	font-family: 'Ubuntu';
-	src: url("fonts/Ubuntu-Light.woff2"),
-	url("fonts/Ubuntu-Light.woff");
-	font-weight: 300;
-	font-display: swap;
-	font-style: normal;
+  font-family: "Ubuntu";
+  src: url("fonts/Ubuntu-Light.woff2"), url("fonts/Ubuntu-Light.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
 }
-
 
 @font-face {
-	font-family: 'Appetite-Italic';
-	src: url('./fonts/appetite-italic.eot'); /* IE 9 Compatibility Mode */
-	src: url('./fonts/appetite-italic.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('./fonts/appetite-italic.woff2') format('woff2'), /* Super Modern Browsers */
-		url('./fonts/appetite-italic.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('./fonts/appetite-italic.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('./fonts/appetite-italic.svg#appetite-italic') format('svg'); /* Chrome < 4, Legacy iOS */
+  font-family: "Appetite-Italic";
+  src: url("./fonts/appetite-italic.eot"); /* IE 9 Compatibility Mode */
+  src: url("./fonts/appetite-italic.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("./fonts/appetite-italic.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/appetite-italic.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/appetite-italic.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/appetite-italic.svg#appetite-italic") format("svg"); /* Chrome < 4, Legacy iOS */
 }
-
 
 @font-face {
-    font-family: 'Source Code Variable';
-    font-weight: 200 900;
-    font-style: normal;
-    font-stretch: normal;
-    src: url('./WOFF2/VAR/SourceCodeVariable-Roman.ttf.woff2') format('woff2'),
-        url('./WOFF/VAR/SourceCodeVariable-Roman.ttf.woff') format('woff'),
-        url('./VAR/SourceCodeVariable-Roman.ttf') format('truetype');
+  font-family: "Source Code Variable";
+  font-weight: 200 900;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("./WOFF2/VAR/SourceCodeVariable-Roman.ttf.woff2") format("woff2"),
+    url("./WOFF/VAR/SourceCodeVariable-Roman.ttf.woff") format("woff"),
+    url("./VAR/SourceCodeVariable-Roman.ttf") format("truetype");
 }
-
 
 @font-face {
-    font-family: 'Source Code Variable';
-    font-weight: 200 900;
-    font-style: italic;
-    font-stretch: normal;
-    src: url('./WOFF2/VAR/SourceCodeVariable-Italic.ttf.woff2') format('woff2'),
-        url('./WOFF/VAR/SourceCodeVariable-Italic.ttf.woff') format('woff'),
-        url('./VAR/SourceCodeVariable-Italic.ttf') format('truetype');
+  font-family: "Source Code Variable";
+  font-weight: 200 900;
+  font-style: italic;
+  font-stretch: normal;
+  src: url("./WOFF2/VAR/SourceCodeVariable-Italic.ttf.woff2") format("woff2"),
+    url("./WOFF/VAR/SourceCodeVariable-Italic.ttf.woff") format("woff"),
+    url("./VAR/SourceCodeVariable-Italic.ttf") format("truetype");
 }
-
-
 
 body h1 {
-    font-family: 'AnyConv.com__Comic_CAT';
-    color: rgb(254, 254, 254);
-    font-size: 80px;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-family: "AnyConv.com__Comic_CAT";
+  color: rgb(254, 254, 254);
+  font-size: 80px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-
 
 body h2 {
-    font-family: 'AnyConv.com__Comic_CAT';
-    color: #9e9a98;
-    font-size: 40px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding-bottom: 20px;
+  font-family: "AnyConv.com__Comic_CAT";
+  color: #9e9a98;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 20px;
 }
 
-
-#iconsHeader{
-    color: azure;
+#iconsHeader {
+  color: azure;
 }
 
 /* Сделал адаптив на маленьких экранах, информация содержится у меня в напоминаниях в полезных документах */
 @media screen and (min-width: 300px) and (max-width: 500px) {
-    body h1 {
-        font-size: 55px;
-        color: rgb(247, 247, 251);
-    }
-    body h2 {
-        font-size: 30px;
-        color: #9e9a98;
-        font-weight: 500;
-        text-transform: uppercase;
-    }
+  body h1 {
+    font-size: 55px;
+    color: rgb(247, 247, 251);
+  }
+  body h2 {
+    font-size: 30px;
+    color: #9e9a98;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
 }
 
-
 body p {
-    color: rgb(0, 3, 5);
+  color: rgb(0, 3, 5);
 }
 
 .header {
-
-    height: 100vh;
-    display: flex;
-    padding-top: 300px;
-    text-align: center;
-    background-color: black;
+  height: 100vh;
+  display: flex;
+  padding-top: 300px;
+  text-align: center;
+  background-color: black;
 }
 
-
 .selector {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .selector h2 {
-    text-align: center;
-    padding-bottom: 60px;
-
+  text-align: center;
+  padding-bottom: 60px;
 }
 
 #tex p {
-    text-align: center;
-    font-family: 'AnyConv.com__Comic_CAT';
-    color: black;
+  text-align: center;
+  font-family: "AnyConv.com__Comic_CAT";
+  color: black;
 }
 
 #img img {
-    /* выровнял изображение по центру блока */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    height: 300px;
+  /* выровнял изображение по центру блока */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 300px;
 }
 
 #texS2 {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-#icons{
-    color: black;
-    text-align: center;
+#icons {
+  color: black;
+  text-align: center;
 }
 
 #texS2 h3 {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-
